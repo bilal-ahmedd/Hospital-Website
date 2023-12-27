@@ -1,0 +1,813 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    position: absolute;
+}
+
+.header {
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #f3f4fbce;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.navbar-link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+}
+
+.navbar-brand {
+    color: #000;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    color: #000;
+    font-size: 14px;
+    transition: 0.5s all;
+}
+
+.nav-link:hover {
+    color: rgb(88, 125, 228);
+}
+
+.nav-link.active {
+    color: rgb(88, 125, 228);
+}
+
+/* Header section ends here */
+
+/* Home section Starts here */
+.home {
+    background: linear-gradient(270deg, rgba(50, 200, 250, 0.40) 0%, rgba(88, 125, 228, 0.4) 100%), url(../assets/contact-banner.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-content h4 {
+	color: #fff;
+	font-size: 35px;
+    font-weight: 400;
+}
+
+.home-content h1 {
+    color: #fff;
+	font-size: 70px;
+	font-weight: 900;
+}
+
+
+
+/* Services Section Start */
+
+.services {
+}
+
+.secondary-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    flex-direction: column;
+}
+
+.secondary-heading img {
+    position: relative;
+    top: -50px;
+    height: 200px;
+    animation-name: rotating;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.service-body {
+    padding: 100px 0;
+}
+
+.service-des {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #ebe4e4;
+}
+
+.img-tag img {
+    height: 200px;
+}
+
+.content {
+    text-align: left;
+    padding: 20px 0px;
+}
+
+.content h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px gray;
+}
+
+.content h3 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.content p {
+    font-size: 13px;
+}
+
+.content .btn {
+    border-radius: 4px;
+    background: linear-gradient(270deg, rgba(50, 200, 250) 0%, rgba(88, 125, 228) 100%);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.content .btn i {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.content .btn:hover {
+    color: #fff;
+    box-shadow: 0 5px 20px 0 rgba(50, 200, 250, 0.185);
+}
+
+/* Service section End */
+
+
+
+
+
+ /* Footer Styling Starts Here */
+.footer {
+    background: url(../assets/footer-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo h6 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-about h6,
+.footer-contact h6 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-about p,
+.footer-contact p,
+.footer-logo p {
+    font-size: 14px;
+    letter-spacing: 0.6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px) {
+    .header {
+        display: block;
+        position: relative;
+    }
+
+    .navbar-link {
+        justify-content: flex-start;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 0px;
+        top: 25px;
+    }
+
+    .navbar-toggler.collapsed {
+        outline: none;
+        border: none;
+        background: none;
+    }
+
+    .about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-img {
+        text-align: center;
+        height: 600px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .depart-box {
+        margin-bottom: 40px;
+    }
+
+    .services {
+        height: 1050px;
+    }
+
+    .service-box {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:764px) {
+
+    .about-img {
+        height: 480px;
+    }
+
+    .service-content {
+        justify-content: space-evenly;
+    }
+
+    .services {
+        height: 1300px;
+    }
+
+    .footer {
+        height: 450px;
+        background-position: left;
+    }
+
+    .footer-content {
+        padding: 0px 0 20px 0;
+        flex-wrap: wrap;
+    }
+
+    .footer-about,
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+@media(max-width:570px) {
+    .home {
+        background-position: left;
+    }
+
+    .about-img {
+        height: 400px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .home-text h3 {
+        font-size: 30px;
+    }
+
+    .home-text p {
+        font-size: 13px;
+    }
+
+    .about-text {
+        padding: 20px 10px;
+    }
+
+    .about-text h2 {
+        font-size: 22px;
+    }
+
+    .about-text p {
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 13px;
+    }
+
+    .test-text p {
+        font-size: 13px;
+    }
+
+    .profile h6 {
+        font-size: 15px;
+    }
+
+    .emergency-content h5 {
+        font-size: 16px;
+    }
+
+    .emergency-content p {
+        font-size:13px;
+    }
+
+    .footer-logo h6 {
+        font-size: 20px;
+    }
+
+    .footer-about p, .footer-logo p, .footer-contact p {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+    @media(max-width:460px) {
+
+        .navbar-toggler {
+            top: 18px;
+        }
+        
+        .navbar-brand {
+            position: relative;
+            left: -20px;
+            font-size: 16px;
+        }
+
+        .about-img {
+            height: 300px;
+        }
+
+        .home-text h3 {
+            font-size: 20px;
+        }
+
+        .depart-title h4 {
+            font-size: 20px;
+        }
+
+        .about-text h2 {
+            font-size: 18px;
+        }
+
+        .footer {
+            height: 500px;
+        }
+
+        .emergency-content h5 {
+            text-align: center;
+        }
+
+        
+    }
+
+
+
+
+
+    @media(max-width:360px) {
+        .about-img {
+            height: 250px;
+        }
+
+        .services {
+            height: 1400px;
+        }
+    }
+
+
+
+
+
+    @media(max-width:300px) {
+        .about-img {
+            height: 200px;
+        }
+
+        .services {
+            height: 1500px;
+        }
+
+        .footer {
+            height: 550px;
+        }
+    }
+/* Footer Styling Ends Here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsive*/
+@media(max-width:991px) {
+
+
+    /* Home Styling Starts Here */
+	.home-title {
+		padding-top: 100px;
+		height: 70%;
+	}
+	
+
+	.home-title h2 {
+		font-size: 30px;
+	}
+	
+	.home-title h1 {
+		font-size: 40px;
+	}
+	
+	.home-title h6 {
+		font-size: 12px;
+	}
+	
+	.home-title .primary-btn {
+		font-size: 13px;
+	}
+	/* Home Styling Ends Here */
+
+}
+
+
+
+
+@media(max-width: 764px) {
+    .home-title {
+        padding-top: 100px;
+        height: 80%;
+    }
+
+
+    .home-title h2 {
+        font-size: 20px;
+    }
+
+    .home-title h1 {
+        font-size: 37px;
+    }
+
+    .home-title h6 {
+        font-size: 10px;
+    }
+
+    .home-title .primary-btn {
+        font-size: 13px;
+    }
+
+    /* Footer Styling Starts Here */
+	
+	/* Footer Styling Ends Here */
+}
+
+
+
+
+@media(max-width: 620px) {
+
+    /* Header Styling Starts Here */
+   
+    /* Header Styling ENds Here */
+
+    .home-title {
+		padding-top: 100px;
+		height: 80%;
+	}
+	
+
+	.home-title h2 {
+		font-size: 18px;
+	}
+	
+	.home-title h1 {
+		font-size: 32px;
+	}
+	
+	.home-title h6 {
+		font-size: 10px;
+	}
+	
+	.home-title .primary-btn {
+		font-size: 10px;
+		padding: 10px 20px;
+	}
+
+}
+
+
+
+
+@media(max-width: 570px) {
+
+	.home-title {
+		padding-top: 100px;
+		height: 80%;
+	}
+	
+	.home-content h4 {
+		font-size: 20px;
+	}
+	
+	.home-content h1 {
+		font-size: 40px;
+	}
+
+    .tag-content h2 {
+        font-size: 22px;
+    }
+
+    .tag-content h2:after {
+        width: 80px;
+    }
+
+    .support-title h3 {
+        font-size: 20px;
+    }
+
+    .support-box {
+        margin-bottom: 20px;
+    }
+
+    .support-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .support-icon i {
+        font-size: 20px;
+    }
+
+    .support-box p {
+        font-size: 16px;
+    }
+
+    .form-title h3 {
+        font-size: 20px;
+    }
+    
+    .form-content h5 {
+        font-size: 18px;
+    }
+
+    .form-input label {
+        font-size: 13px;
+    }
+    .form-input input {
+        height: 30px;
+    }
+
+    ::placeholder, select {
+        font-size: 13px;
+    }
+
+}
+
+
+
+
+
+@media(max-width: 490px) {
+
+    /* Header Styling Starts Here */
+ 
+    /* Header Styling Ends Here */
+
+    .home-title {
+		padding-top: 80px;
+		height: 80%;
+	}
+	
+
+	.home-title h2 {
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+	
+	.home-title h1 {
+		font-size: 25px;
+		margin-bottom: 5px;
+	}
+	
+	.home-title h6 {
+		font-size: 8px;
+		margin-bottom: 16px;
+	}
+	
+	.home-title .primary-btn {
+		font-size: 6px;
+		padding: 8px 16px;
+	}
+
+ 
+}
+
+
+
+
+
+@media(max-width: 400px) {
+	
+    .home-title {
+		padding-top: 40px;
+		height: 80%;
+	}
+	
+
+	.home-title h2 {
+		font-size: 8px;
+		margin-bottom: 2px;
+	}
+	
+	.home-title h1 {
+		font-size: 20px;
+		margin-bottom: 2px;
+	}
+	
+	.home-title h6 {
+		font-size: 5px;
+		margin-bottom: 10px;
+	}
+	
+	.home-title .primary-btn {
+		font-size: 4px;
+		padding: 5px 12px;
+	}
+
+
+}
+
+
+
+
+
+
+
+@media(max-width: 300px) {
+
+	/* Header Styling Starts Here */
+	.header .menu .mobile-menu-head {
+		display: flex;
+		width: 300px;
+		height: 50px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		z-index: 501;
+		position: sticky;
+		background-color: #ffffff;
+		top: 0;
+	}
+	/* Header Styling Ends Here */
+
+    .home-content h4 {
+        font-size: 15px;
+    }
+    
+    .home-content h1 {
+        font-size: 30px;
+    }
+    
+    .tag-content h2 {
+        font-size: 14px;
+    }
+
+    .tag-content h2:after {
+        width: 80px;
+    }
+
+    .support-title h3 {
+        font-size: 15px;
+    }
+
+    .support-box {
+        margin-bottom: 20px;
+    }
+
+    .support-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .support-icon i {
+        font-size: 18px;
+    }
+
+    .support-box p {
+        font-size: 14px;
+    }
+
+    .form-title h3 {
+        font-size: 18px;
+    }
+    
+    .form-content h5 {
+        font-size: 15px;
+    }
+
+    .form-input label {
+        font-size: 13px;
+    }
+    .form-input input {
+        height: 30px;
+    }
+
+    ::placeholder, select {
+        font-size: 13px;
+    }
+
+    .contact-desc h4 {
+        font-size: 14px;
+    }
+
+	/* Footer Styling Starts Here */
+	.social-links i {
+		font-size: 9px;
+		padding: 5px 6px;
+	}
+	/* Footer Styling Ends Here */
+}
+
+
+
+@media(max-width: 280px) {
+	.header .menu .mobile-menu-head {
+		display: flex;
+		width: 280px;
+		height: 50px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		z-index: 501;
+		position: sticky;
+		background-color: #ffffff;
+		top: 0;
+    }
+}

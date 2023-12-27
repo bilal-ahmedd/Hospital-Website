@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.v-center {
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Post-content styling starts Here */
+
+.post-header {
+    padding: 80px 0;
+    position: relative;
+    top: -64px;
+    width: 100%;
+    height: 600px;
+    background: #1a1e21;
+}
+
+
+.post-container {
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem !important;
+}
+
+.back-home {
+    color: rgba(50, 200, 250);
+    font-size: 0.9rem;
+    transition: 0.5s all;
+}
+
+.back-home:hover {
+    text-decoration: none;
+    color:rgb(88, 125, 228);
+}
+
+.header-title {
+    width: 90%;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.header-img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.post-content {
+    padding: 0px 0 80px 0;
+    margin-top: 7rem !important;
+}
+
+.sub-heading {
+    font-size: 1.2rem;
+    font-weight: 800;
+    background: linear-gradient(rgba(50, 200, 250),rgba(88, 125, 228));
+	-webkit-background-clip:text;
+	-webkit-text-fill-color: transparent;
+}
+
+.post-text {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+/* Post-content styling Ends Here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:850px) {
+
+    .header-title {
+        font-size: 2.2rem;
+    }
+
+    .post-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 50px 20px;
+    }
+}
+
+
+
+@media(max-width:600px) {
+    .header-title {
+        font-size: 1.5rem;
+    }
+
+    .post-text {
+        font-size: 0.8rem;
+    }
+
+}

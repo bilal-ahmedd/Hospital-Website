@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar starts from here */
+.navbar {
+    width: 100%;
+    position: absolute;
+}
+
+.header {
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #f3f4fbce;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.navbar-link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+}
+
+.navbar-brand {
+    color: #000;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    color: #000;
+    font-size: 14px;
+    transition: 0.5s all;
+}
+
+.nav-link:hover {
+    color: rgb(88, 125, 228);
+}
+
+.nav-link.active {
+    color: rgb(88, 125, 228);
+}
+
+/* Content Start from here */
+
+.home {
+    background: linear-gradient(270deg, rgba(50, 200, 250, 0.40) 0%, rgba(88, 125, 228, 0.4) 100%), url(../assets/contact-banner.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-content h4 {
+	color: #fff;
+	font-size: 35px;
+    font-weight: 400;
+}
+
+.home-content h1 {
+    color: #fff;
+	font-size: 70px;
+	font-weight: 900;
+}
+/* Home Styling Ends Here */
+
+
+/* Style the list */
+.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #ffffff00;
+  }
+  
+  /* Display list items side by side */
+  .breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  .breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  .breadcrumb li a {
+    color: rgb(88, 125, 228);
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  .breadcrumb li a:hover {
+    color: rgb(88, 125, 228);
+    text-decoration: underline;
+  }
+
+/* about content */
+
+.content {
+    padding: 50px 0;
+}
+
+.content h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.content p{
+    font-size: 16px;
+}
+
+/* free Consultation */
+.consultation{
+    height: 180px;
+    background: linear-gradient(270deg, rgba(62, 154, 185, 0.692) 0%, rgba(115, 147, 236, 0.712) 100%), url(../assets/about-consultation.webp) no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+.consultation h3{
+    font-size: 34px;
+    font-weight: 500;
+    color: white;
+}
+.consultation p{
+    font-size: 17px;
+    color: white;
+}
+.consultation a{
+    font-size: 19px;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: rgb(88, 125, 228);
+    color: white;
+}
+
+/* cards */
+.boxes .row{
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.boxes h4{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: normal;
+}
+.boxes p{
+    font-size: 17px;
+}
+.boxes a{
+    color: black;
+    font-weight: 510;
+    text-decoration: none;
+}
+.boxes .col-md-3{
+    padding: 15px;
+}
+.boxes .col-md-3:hover{
+    box-shadow: 5px 5px 20px 5px rgba(128, 128, 128, 0.199);
+}
+.boxes .col-md-3:hover h4{
+    color: rgb(88, 125, 228);
+}
+.boxes i {
+    color: rgb(88, 125, 228);
+    font-size: 40px;
+}
+
+/* Footer Start From Here */
+.footer {
+    background: url(../assets/footer-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo h6 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-about h6,
+.footer-contact h6 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-about p,
+.footer-contact p,
+.footer-logo p {
+    font-size: 14px;
+    letter-spacing: 0.6px;
+}
